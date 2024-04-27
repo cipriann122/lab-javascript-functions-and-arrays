@@ -1,9 +1,14 @@
 // Iteration #1: Find the maximum
 function maxOfTwoNumbers(a, b) {
   if (a > b) {
+    console.log(`${a} is bigger than ${b}.`);
     return a;
-  } else {
+  } else if (a < b) {
+    console.log(`${b} is bigger than ${a}.`);
     return b;
+  } else {
+    console.log(`Both numbers are equal`);
+    return a;
   }
 }
 
